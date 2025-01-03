@@ -1,0 +1,325 @@
+/* .add{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+
+.add form{
+    gap:20px;
+}
+
+
+.add-imageupload img{
+    width: 120px;
+}
+
+.add-productname,.add-productdescription{
+width: max(40%,280px);
+
+
+}
+
+.add-productname input, .add-productdescription textarea{
+    padding: 10px;
+}
+
+.categoryprice{
+    gap: 30px;
+    display: flex;
+}
+
+.categoryprice select, .categoryprice input{
+    max-width: 120px;
+    padding: 10px;
+
+}
+
+.Addbutton{
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+.add-availability {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-availability input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.add-availability p {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+
+
+
+.add-availability {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .availability-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .availability-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+  }
+  
+  .availability-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .availability-input {
+    text-align: center;
+    width: 60px;
+    height: 40px;
+    margin: 0 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+  }
+  .add-availability {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .availability-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .availability-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+  }
+  
+  .availability-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .availability-input {
+    text-align: center;
+    width: 60px;
+    height: 40px;
+    margin: 0 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+  }
+  .add-availability {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .availability-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .availability-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+  }
+  
+  .availability-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .availability-input {
+    text-align: center;
+    width: 60px;
+    height: 40px;
+    margin: 0 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+  }
+  .availability-counter {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .availability-counter img {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .availability-counter p {
+    margin: 0 10px;
+    font-size: 18px;
+  }
+   */
+
+
+
+   /* General Add Page Styling */
+
+/* General Add Page Styling */
+.add {
+  width: 70%;
+  margin: 50px auto;
+  color: #6d6d6d;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.add form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-imageupload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-imageupload img {
+  width: 120px;
+  cursor: pointer;
+}
+
+.add-productname, .add-productdescription, .categoryprice {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.add-productname input, .add-productdescription textarea, .categoryprice select, .categoryprice input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.add-productdescription textarea {
+  resize: vertical;
+}
+
+.categoryprice {
+  display: flex;
+  gap: 30px;
+}
+
+.add-price, .add-category {
+  flex: 1;
+}
+
+.quantity-availability {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.add-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Align the buttons horizontally next to the input */
+.add-quantity button {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s ease;
+  width: 40px;  /* Button width */
+  height: 40px;  /* Button height */
+}
+
+.add-quantity input {
+  width: 60px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.add-quantity button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.add-quantity button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.add-availability select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Add Button Styling */
+.Addbutton {
+  max-width: 120px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Addbutton:hover {
+  background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .add {
+      width: 90%;
+  }
+
+  .categoryprice {
+      flex-direction: column;
+  }
+
+  .quantity-availability {
+      flex-direction: column;
+  }
+}

@@ -1,0 +1,133 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  width: 150px;
+  height: auto;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+
+/* Link and Active Styles for Navbar Menu */
+.navbar-menu a,
+.navbar-menu .active {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-menu a:hover,
+.navbar-menu .active {
+  background-color: #f5f5f5;
+}
+
+/* Navbar Right Section Styles */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Cart Icon Styles */
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/* Profile Dropdown Styles */
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbarprofiledropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px 0;
+  width: 150px;
+  z-index: 10;
+}
+
+.navbar-profile:hover .navbarprofiledropdown {
+  display: block;
+}
+
+.navbarprofiledropdown li {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbarprofiledropdown li:hover {
+  background-color: #f5f5f5;
+}
+
+.navbarprofiledropdown hr {
+  margin: 5px 0;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Sign-in Button */
+.navbar-right button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-right button:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .navbar-menu {
+      display: none; /* Hide the menu for mobile */
+  }
+
+  /* Mobile view for Cart and Profile */
+  .navbar-right {
+      gap: 10px;
+  }
+
+  .navbar-profile {
+      display: none; /* Hide profile menu in mobile */
+  }
+
+  /* Add mobile menu toggle or icon here if necessary */
+}
